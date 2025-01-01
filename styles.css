@@ -1,0 +1,160 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Section styles */
+.section {
+    padding: 3rem 1rem;
+}
+
+/* Container for centering content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* About Me */
+#about {
+    background-color: #ecf0f1;
+    text-align: center;
+}
+
+#about .photo img {
+    border-radius: 50%;
+    width: 200px;  /* Adjust photo size */
+    height: 200px;
+    margin-top: 20px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+#about .photo img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Skills Section */
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills li {
+    background-color: #3498db;
+    color: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#skills li:hover {
+    background-color: #2980b9;
+}
+
+#skills ul ul {
+    padding-left: 20px;
+}
+
+#skills ul ul li {
+    background-color: #16a085;
+}
+
+/* Education Section */
+#education ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#education li {
+    background-color: #1abc9c;
+    color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#education li:hover {
+    background-color: #16a085;
+}
+
+/* Achievements Section */
+#achievements ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#achievements li {
+    background-color: #f39c12;
+    color: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#achievements li:hover {
+    background-color: #e67e22;
+}
+
+/* Contact Section */
+#contact a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #2980b9;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.section {
+    animation: fadeIn 1.5s ease-in;
+}
